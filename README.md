@@ -1,32 +1,16 @@
-# TAMAN
+# TAMANALT
 
-Taman is a responsive theme for [Pelican](http://getpelican.com), it is hackish port of Jekyll's [Logom](https://github.com/swanson/lagom) theme. 
-
-The name is synonym of word [Lagom](https://en.wikipedia.org/wiki/Lagom) in Slavic languages.
+Tamanalt is a responsive theme for [Pelican](http://getpelican.com) based on [Karambir Nain's taman theme])https://github.com/karambir/taman).
 
 ## DEMO
 
-You can see the [theme in action](http://www.karambir.in/).
-
-![theme screenshot](https://raw.github.com/karambir/taman/master/screenshot.png)
-
-## FEATURES
-
-- responsive
-- syntax highlighting for pre blocks
-- minify css files
-- supports google analytics
-- custom list of links
-- social links with FontAwesome4
-- custom favicon and logo urls
-- no custom menu
-- support canonical urls
+You can see the theme in use [here](http://jmcmahon.org).
 
 ## INSTALL
 
-Clone the [repository](https://github.com/karambir/taman), edit your `pelicanconf.py` and modify the `THEME` variable to make it point to the downloaded theme location.
+Clone the repository, edit `pelicanconf.py` and modify the `THEME` variable to make it point to the downloaded theme location.
 
-The theme use *assets* plugin to handle minification of css files from [here](https://github.com/getpelican/pelican-plugins/tree/maser/assets)
+The theme uses the *assets* plugin to handle minification of css files from [here](https://github.com/getpelican/pelican-plugins/tree/maser/assets)
 
 - Install required package for *assets* plugin by `pip install webassets`
 - Refer this [documention](https://github.com/getpelican/pelican-plugins#how-to-use-plugins) to install plugin.
@@ -58,8 +42,4 @@ When developing locally, you may want to set the following variable: `SITEURL = 
 
 ## AUTHOR
 
-Lagom theme is originally authored by [Matt Swanson](https://mdswanson.com/). I started with [pelican-svbhack](https://github.com/gfidente/pelican-svbhack) as base.
-
-## LICENSE
-
-Released under MIT License, full details in `LICENSE` file.
+Taman was originally authored by [Karambir Nain](https://github.com/karambir). I started with his theme [taman](https://github.com/karambir/taman) and customized it for my purposes.

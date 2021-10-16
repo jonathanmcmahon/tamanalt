@@ -1,7 +1,21 @@
 {% extends "base.html" %}
 {% block content %}
 <div id="home">
-  <h2>Blog Posts </h2>
+
+  {% if INTRO %}
+  {% for page in pages | selectattr('title', '==', INTRO) %}
+    <h2>{{page.title}}</h2>
+    <page class="hentry">
+        <div class="entry-content">
+          {{ page.content }}
+        </div><!-- /.entry-content -->
+    </page>
+  {% endfor %}
+  {{ INTRO.content }}
+  {% endif %}
+
+  {% if articles %}
+  <h2>blog posts</h2>
   <ul class="posts">
     {% for article in articles %}
     <li>
@@ -10,5 +24,6 @@
     </li>
     {% endfor %}
   </ul>
+  {% endif %}
 </div>
 {% endblock %}
